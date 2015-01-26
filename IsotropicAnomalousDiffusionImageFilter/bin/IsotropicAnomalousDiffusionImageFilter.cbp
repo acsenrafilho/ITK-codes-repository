@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="IsotropicAnomalousDiffusionImageFilter" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\ITK4.6.0\;CMake Files\..\..\..\..\ITK4.6.0\bin\;CMake Files\..\..\..\..\ITK4.6.0\bin\lib\;CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\;CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\;CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\;CMake Files\..\..\..\..\ITK4.6.0\source\;CMake Files\..\..\..\..\ITK4.6.0\source\CMake\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="IsotropicAnomalousDiffusionImageFilter">
+         <Option output="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/IsotropicAnomalousDiffusionImageFilter" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DITK_IO_FACTORY_REGISTER_MANAGER" />
+            <Add directory="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/ITKIOFactoryRegistration" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/Core/Common" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/IO/ImageBase" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject-build/config/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmdata/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmdata/include/dcmtk/dcmdata" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmimage/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmimage/include/dcmtk/dcmimage" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmimgle/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmimgle/include/dcmtk/dcmimgle" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmjpeg/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmjpeg/include/dcmtk/dcmjpeg" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmjpls/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmjpls/include/dcmtk/dcmjpls" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmnet/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmnet/include/dcmtk/dcmnet" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmpstat/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmpstat/include/dcmtk/dcmpstat" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmqrdb/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmqrdb/include/dcmtk/dcmqrdb" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmsr/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmsr/include/dcmtk/dcmsr" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmtls/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmtls/include/dcmtk/dcmtls" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ijg12/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ijg12/include/dcmtk/ijg12" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ijg16/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ijg16/include/dcmtk/ijg16" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ijg8/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ijg8/include/dcmtk/ijg8" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/oflog/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/oflog/include/dcmtk/oflog" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ofstd/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ofstd/include/dcmtk/ofstd" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/GDCM" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/HDF5/src/itkhdf5" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/KWSys/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/MINC/ITKMINC2_ExternalProject" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/MINC/ITKMINC2_ExternalProject/volume_io/Include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/MINC/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/MetaIO/src/MetaIO" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/Netlib" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/OpenJPEG/src/openjpeg" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/PNG/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/TIFF/src/itktiff" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Bridge/VTK/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/Common/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/FiniteDifference/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/GPUCommon/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/GPUFiniteDifference/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/ImageAdaptors/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/ImageFunction/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/Mesh/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/QuadEdgeMesh/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/SpatialObjects/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/TestKernel/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/Transform/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/AnisotropicSmoothing/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/AntiAlias/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/BiasCorrection/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/BinaryMathematicalMorphology/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/Colormap/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/Convolution/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/CurvatureFlow/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/Deconvolution/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/Denoising/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/DiffusionTensorImage/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/DisplacementField/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/DistanceMap/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/FFT/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/FastMarching/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/GPUAnisotropicSmoothing/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/GPUImageFilterBase/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/GPUSmoothing/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/GPUThresholding/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageCompare/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageCompose/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageFeature/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageFilterBase/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageFusion/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageGradient/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageGrid/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageIntensity/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageLabel/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageNoise/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageSources/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageStatistics/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/LabelMap/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/MathematicalMorphology/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/Path/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/QuadEdgeMeshFiltering/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/Smoothing/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/SpatialFunction/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/Thresholding/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/BMP/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/BioRad/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/CSV/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/DCMTK/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/GDCM/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/GE/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/GIPL/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/HDF5/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/IPL/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/ImageBase/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/JPEG/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/LSM/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/MINC/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/MRC/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/Mesh/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/Meta/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/NIFTI/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/NRRD/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/PNG/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/PhilipsREC/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/RAW/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/Siemens/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/SpatialObjects/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/Stimulate/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/TIFF/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/TransformBase/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/TransformHDF5/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/TransformInsightLegacy/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/TransformMatlab/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/VTK/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/XML/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/Eigen/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/FEM/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/NarrowBand/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/NeuralNetworks/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/Optimizers/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/Optimizersv4/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/Polynomials/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/Statistics/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Registration/Common/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Registration/FEM/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Registration/GPUCommon/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Registration/GPUPDEDeformable/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Registration/Metricsv4/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Registration/PDEDeformable/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Registration/RegistrationMethodsv4/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/BioCell/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/Classifiers/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/ConnectedComponents/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/DeformableMesh/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/KLMRegionGrowing/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/LabelVoting/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/LevelSets/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/LevelSetsv4/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/MarkovRandomFieldsClassifiers/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/RegionGrowing/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/SignedDistanceFunction/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/Voronoi/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/Watersheds/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/DoubleConversion/src/double-conversion" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/GDCM/src/gdcm/Source/DataDictionary" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/GDCM/src/gdcm/Source/DataStructureAndEncodingDefinition" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/GDCM/src/gdcm/Source/InformationObjectDefinition" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/GDCM/src/gdcm/Source/MediaStorageAndFileFormat" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/GDCM/src/gdcm/Source/MessageExchangeDefinition" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/GIFTI/src/gifticlib" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/HDF5/src/itkhdf5" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/MetaIO/src/MetaIO" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/NIFTI/src/nifti/niftilib" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/NIFTI/src/nifti/znzlib" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/OpenJPEG/src/openjpeg" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/PNG/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/VNLInstantiation/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Video/Core/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Video/Filtering/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Video/IO/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 IsotropicAnomalousDiffusionImageFilter" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="IsotropicAnomalousDiffusionImageFilter/fast">
+         <Option output="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/IsotropicAnomalousDiffusionImageFilter" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DITK_IO_FACTORY_REGISTER_MANAGER" />
+            <Add directory="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/ITKIOFactoryRegistration" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/Core/Common" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/IO/ImageBase" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject-build/config/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmdata/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmdata/include/dcmtk/dcmdata" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmimage/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmimage/include/dcmtk/dcmimage" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmimgle/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmimgle/include/dcmtk/dcmimgle" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmjpeg/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmjpeg/include/dcmtk/dcmjpeg" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmjpls/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmjpls/include/dcmtk/dcmjpls" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmnet/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmnet/include/dcmtk/dcmnet" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmpstat/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmpstat/include/dcmtk/dcmpstat" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmqrdb/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmqrdb/include/dcmtk/dcmqrdb" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmsr/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmsr/include/dcmtk/dcmsr" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmtls/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/dcmtls/include/dcmtk/dcmtls" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ijg12/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ijg12/include/dcmtk/ijg12" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ijg16/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ijg16/include/dcmtk/ijg16" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ijg8/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ijg8/include/dcmtk/ijg8" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/oflog/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/oflog/include/dcmtk/oflog" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ofstd/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DCMTK/ITKDCMTK_ExtProject/ofstd/include/dcmtk/ofstd" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/GDCM" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/HDF5/src/itkhdf5" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/KWSys/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/MINC/ITKMINC2_ExternalProject" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/MINC/ITKMINC2_ExternalProject/volume_io/Include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/MINC/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/MetaIO/src/MetaIO" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/Netlib" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/OpenJPEG/src/openjpeg" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/PNG/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/TIFF/src/itktiff" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/bin/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Bridge/VTK/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/Common/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/FiniteDifference/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/GPUCommon/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/GPUFiniteDifference/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/ImageAdaptors/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/ImageFunction/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/Mesh/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/QuadEdgeMesh/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/SpatialObjects/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/TestKernel/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Core/Transform/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/AnisotropicSmoothing/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/AntiAlias/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/BiasCorrection/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/BinaryMathematicalMorphology/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/Colormap/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/Convolution/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/CurvatureFlow/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/Deconvolution/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/Denoising/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/DiffusionTensorImage/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/DisplacementField/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/DistanceMap/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/FFT/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/FastMarching/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/GPUAnisotropicSmoothing/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/GPUImageFilterBase/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/GPUSmoothing/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/GPUThresholding/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageCompare/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageCompose/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageFeature/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageFilterBase/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageFusion/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageGradient/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageGrid/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageIntensity/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageLabel/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageNoise/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageSources/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/ImageStatistics/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/LabelMap/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/MathematicalMorphology/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/Path/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/QuadEdgeMeshFiltering/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/Smoothing/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/SpatialFunction/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Filtering/Thresholding/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/BMP/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/BioRad/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/CSV/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/DCMTK/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/GDCM/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/GE/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/GIPL/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/HDF5/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/IPL/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/ImageBase/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/JPEG/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/LSM/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/MINC/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/MRC/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/Mesh/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/Meta/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/NIFTI/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/NRRD/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/PNG/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/PhilipsREC/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/RAW/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/Siemens/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/SpatialObjects/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/Stimulate/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/TIFF/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/TransformBase/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/TransformHDF5/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/TransformInsightLegacy/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/TransformMatlab/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/VTK/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/IO/XML/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/Eigen/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/FEM/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/NarrowBand/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/NeuralNetworks/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/Optimizers/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/Optimizersv4/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/Polynomials/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Numerics/Statistics/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Registration/Common/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Registration/FEM/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Registration/GPUCommon/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Registration/GPUPDEDeformable/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Registration/Metricsv4/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Registration/PDEDeformable/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Registration/RegistrationMethodsv4/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/BioCell/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/Classifiers/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/ConnectedComponents/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/DeformableMesh/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/KLMRegionGrowing/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/LabelVoting/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/LevelSets/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/LevelSetsv4/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/MarkovRandomFieldsClassifiers/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/RegionGrowing/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/SignedDistanceFunction/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/Voronoi/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Segmentation/Watersheds/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/DoubleConversion/src/double-conversion" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/GDCM/src/gdcm/Source/DataDictionary" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/GDCM/src/gdcm/Source/DataStructureAndEncodingDefinition" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/GDCM/src/gdcm/Source/InformationObjectDefinition" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/GDCM/src/gdcm/Source/MediaStorageAndFileFormat" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/GDCM/src/gdcm/Source/MessageExchangeDefinition" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/GIFTI/src/gifticlib" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/HDF5/src/itkhdf5" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/MetaIO/src/MetaIO" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/NIFTI/src/nifti/niftilib" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/NIFTI/src/nifti/znzlib" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/OpenJPEG/src/openjpeg" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/PNG/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/VNLInstantiation/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Video/Core/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Video/Filtering/include" />
+            <Add directory="/home/antonio/Documents/ITK4.6.0/source/Modules/Video/IO/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 IsotropicAnomalousDiffusionImageFilter/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/Main.cpp">
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/IsotropicAnomalousDiffusionImageFilter.h">
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/IsotropicAnomalousDiffusionImageFilter.hxx">
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/ITKConfigVersion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/ITKConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/ITKTargets.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKDoubleConversion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKKWSys.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKVNL.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKVNLInstantiation.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKFiniteDifference.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKImageFilterBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKCurvatureFlow.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKImageAdaptors.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKNetlib.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKStatistics.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKTransform.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKImageFunction.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKImageGrid.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKAnisotropicSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOImageBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOBMP.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOBioRad.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKExpat.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKOpenJPEG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKZLIB.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKGDCM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOGDCM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOGIPL.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKJPEG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOJPEG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKTIFF.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOTIFF.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOLSM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKMetaIO.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOMeta.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKNIFTI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIONIFTI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKNrrdIO.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIONRRD.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKPNG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOPNG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOStimulate.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOVTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKTestKernel.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKImageCompose.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKSpatialObjects.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKImageStatistics.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKPath.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKImageIntensity.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKImageLabel.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKThresholding.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKConnectedComponents.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKMathematicalMorphology.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKLabelMap.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKBinaryMathematicalMorphology.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKNarrowBand.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKDistanceMap.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKQuadEdgeMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKFastMarching.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKImageCompare.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKImageGradient.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKImageSources.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKImageFeature.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKOptimizers.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKSignedDistanceFunction.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKLevelSets.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKAntiAlias.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKPolynomials.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKBiasCorrection.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKBioCell.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKClassifiers.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKColormap.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKFFT.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKConvolution.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKDCMTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKDICOMParser.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKDeconvolution.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKDeformableMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKDenoising.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKDiffusionTensorImage.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKDisplacementField.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKEigen.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOXML.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOSpatialObjects.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKRegistrationCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKFEM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKPDEDeformableRegistration.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKFEMRegistration.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKGIFTI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKGPUCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKGPUFiniteDifference.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKGPUAnisotropicSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKGPUImageFilterBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKGPURegistrationCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKGPUPDEDeformableRegistration.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKGPUSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKGPUThresholding.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKHDF5.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOCSV.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIODCMTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOIPL.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOGE.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOSiemens.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOHDF5.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOTransformBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKMINC.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOMINC.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOMRC.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOPhilipsREC.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIORAW.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOTransformHDF5.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOTransformInsightLegacy.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIOTransformMatlab.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKImageFusion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKImageNoise.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKIntegratedTest.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKKLMRegionGrowing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKLabelVoting.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKMarkovRandomFieldsClassifiers.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKNeuralNetworks.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKQuadEdgeMeshFiltering.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKRegionGrowing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKSpatialFunction.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKVTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKVoronoi.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKWatersheds.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKLevelSetsv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKOptimizersv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKMetricsv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKRegistrationMethodsv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKVideoCore.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKVideoIO.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/bin/lib/cmake/ITK-4.6/Modules/ITKVideoFiltering.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\bin\lib\cmake\ITK-4.6\Modules\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/source/CMake/ITKModuleAPI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\source\CMake\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/source/CMake/UseITK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\source\CMake\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/source/CMake/itkImageIOFactoryRegisterManager.h.in">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\source\CMake\" />
+      </Unit>
+      <Unit filename="/home/antonio/Documents/CSIMToolkit/Examples/Filtering/IsotropicAnomalousDiffusionImageFilter/../../../../ITK4.6.0/source/CMake/itkTransformIOFactoryRegisterManager.h.in">
+          <Option virtualFolder="CMake Files\..\..\..\..\ITK4.6.0\source\CMake\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
